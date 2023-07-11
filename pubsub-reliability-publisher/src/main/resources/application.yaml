@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gcp:
+      pubsub:
+        enabled: true
+        project-id: ${PROJECT_ID:default_project}
+pubsub:
+  region: ${REGION}
+  topic: projects/${PROJECT_ID:default_project}/topics/pubsub-reliability-topic
